@@ -180,18 +180,24 @@ nav li a:hover, nav li a.active { background:#f6dcbf; color:#7a3010; }
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 15px;
-  text-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+  text-shadow: 2px 2px 6px rgba(236, 234, 234, 0.1);
 }
 
 .hero-content p {
   font-size: 1.5rem;
   margin-bottom: 25px;
-  text-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+  text-shadow: 1px 1px 5px rgba(233, 228, 228, 0.1);
 }
 
 #load-more-btn:hover {
   background-color: #e63946;
   transform: scale(1.05);
+}
+
+.hero-content h1,
+.hero-content p,
+.hero-content a {
+  color: white;
 }
 
 
@@ -212,6 +218,11 @@ nav li a:hover, nav li a.active { background:#f6dcbf; color:#7a3010; }
   margin-bottom: 1.5rem;
   font-size: 2rem;
 }
+
+#history-anchor {
+  text-align: left;
+}
+
 
 
 /* Donate button styling */
@@ -363,7 +374,16 @@ body {
   font-size: 2rem;
 }
 
-
+#contact h2 {
+  text-align: left;
+}
+.map-container {
+  margin-top: 20px;
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
 
 /* ===== SECTIONS ===== */
 
@@ -460,6 +480,7 @@ h2 { font-family:'Cinzel',serif; color:#7a3010; margin-bottom:1rem; border-botto
   color: white;
   border: none;
   padding: 10px;
+  width: 56%;
   border-radius: 8px;
   cursor: pointer;
   transition: 0.3s;
@@ -480,7 +501,7 @@ h2 { font-family:'Cinzel',serif; color:#7a3010; margin-bottom:1rem; border-botto
   border-radius: 8px;
   border: 1px solid #ddd;
   font-size: 1rem;
-  width: 100%;
+  width: 56%;
   box-sizing: border-box;
   background-color: #fffaf3; /* match your input background */
   color: #3a2e1f; /* match text color */
@@ -508,13 +529,29 @@ h2 { font-family:'Cinzel',serif; color:#7a3010; margin-bottom:1rem; border-botto
   background: rgba(40, 20, 10, 0.6); /* Transparent brownish tone */
   color: #f8f5f2;
   text-align: center;
-  padding: 0.8rem 0; /* Smaller height */
+  padding: 20px;
   font-size: 0.9rem;
-  backdrop-filter: blur(6px); /* Glassy look */
+  backdrop-filter: blur(6px);
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   position: relative;
   font-family: 'Poppins', sans-serif;
 }
+
+.site-footer .social-icons {
+  margin-top: 10px;
+}
+
+.site-footer .social-icons a {
+  margin: 0 10px;
+  color: #f8f5f2;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.site-footer .social-icons a:hover {
+  color: #ffcc99; /* Light highlight on hover */
+}
+
 /* ===== Responsive Navbar and Hamburger ===== */
 .navbar {
   padding: 1rem 5%;
@@ -700,4 +737,5 @@ nav ul {
   border-radius: 12px;
   text-decoration: none;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  trans
+  transition: all;
+}
